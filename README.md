@@ -1,78 +1,59 @@
-# AngularToDoList
-A sample angular project
-# To-Do List Frontend Application
+# TodoListFrontend
 
-## Overview
-This project is a simple **To-Do List application** built with **Angular**. It allows users to add, update, and delete tasks. The tasks are persisted in the browser using `localStorage`, so they remain available even after refreshing the page.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
----
+## Development server
 
-## Features
-1. Add new tasks.
-2. Mark tasks as completed.
-3. Delete tasks.
-4. Filter tasks by:
-   - All
-   - Completed
-   - Pending
-5. Tasks are saved in the browser using `localStorage`.
+To start a local development server, run:
 
----
-
-## Prerequisites
-Ensure you have the following installed:
-
-1. **Node.js and npm**:
-   - [Install Node.js](https://nodejs.org/)
-   - Verify installation:
-     ```bash
-     node -v
-     npm -v
-     ```
-
-2. **Angular CLI**:
-   - Install globally:
-     ```bash
-     npm install -g @angular/cli
-     ```
-   - Verify installation:
-     ```bash
-     ng version
-     ```
-
----
-
-## File Structure
-
-```
-TodoListFrontend/
-├── src/
-│   ├── app/
-│   │   ├── todo/
-│   │   │   ├── todo.component.ts      # Logic for To-Do list functionality
-│   │   │   ├── todo.component.html    # Template for the To-Do list
-│   │   │   ├── todo.component.css     # Styling for the To-Do list
-│   ├── app.component.ts       # Root component
-│   ├── app.component.html     # Root template
-│   └── main.ts                # Application bootstrap
-├── angular.json                  # Angular CLI configuration
-├── package.json                  # Project dependencies
-└── README.md                    # Project instructions
+```bash
+ng serve
 ```
 
----
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## How to Use
-1. **Add a Task**:
-   - Type in the input field and click "Add".
+## Code scaffolding
 
-2. **Complete a Task**:
-   - Check the checkbox beside the task.
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-3. **Delete a Task**:
-   - Click the "Delete" button beside a task.
+```bash
+ng generate component component-name
+```
 
-4. **Filter Tasks**:
-   - Use the "All", "Completed", or "Pending" buttons to filter tasks.
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
----
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
